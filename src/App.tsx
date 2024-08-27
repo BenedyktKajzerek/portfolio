@@ -1,11 +1,17 @@
-import './App.css';
+import "./App.css";
+import { Navbar } from "./components/sections/navbar";
 
 function App() {
   return (
     <>
-      <h1>Portfolio</h1>
+      <Navbar />
+      {/* <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact /> */}
     </>
   );
-};
+}
 
 export default App;
