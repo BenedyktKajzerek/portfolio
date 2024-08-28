@@ -5,6 +5,8 @@
 :root {
   --white: rgb(245, 245, 245);
   --black: rgb(15, 15, 15);
+  --primary: #3b82f6;
+  --grey-dark: #212121;
 }
 
 *,
@@ -23,5 +25,45 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 64px;
+  max-width: 1200px;
+}
+
+@media all and (max-width: 1023px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media all and (max-width: 639px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* ================ */
+/* ===== HERO ===== */
+/* ================ */
+
+.hero-image {
+  background-image: url(/src/assets/hero.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid var(--primary);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: all 1s ease-in-out;
+  animation: hero-animation 7s ease-in-out infinite;
+}
+
+@keyframes hero-animation {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
