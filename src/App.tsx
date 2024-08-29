@@ -1,4 +1,6 @@
 import "./App.css";
+import { About } from "./components/sections/about";
+import { Contact } from "./components/sections/contact";
 import { Hero } from "./components/sections/hero";
 import { Navbar } from "./components/sections/navbar";
 
@@ -8,30 +10,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        {/* <About />
-          <Skills />
-          <Projects />
-          <Contact /> */}
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <About />
+        {/* <Skills />
+          <Projects /> */}
+        <Contact />
       </main>
     </>
   );

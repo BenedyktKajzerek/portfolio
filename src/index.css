@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --white: rgb(245, 245, 245);
+  --white: rgb(245, 245, 250);
   --black: rgb(15, 15, 15);
   --primary: #3b82f6;
   --grey-dark: #212121;
@@ -27,6 +27,8 @@ body {
   margin: 0 auto;
   padding: 0 64px;
   max-width: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
 @media all and (max-width: 1023px) {
@@ -46,7 +48,7 @@ body {
 /* ================ */
 
 .hero-image {
-  background-image: url(/src/assets/hero.png);
+  background-image: url(/src/assets/img.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,5 +67,23 @@ body {
   }
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+/* ================= */
+/* ===== ABOUT ===== */
+/* ================= */
+
+.about-image {
+  transition: all 1s ease-in-out;
+  animation: about-animation 5s linear infinite;
+}
+
+@keyframes about-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

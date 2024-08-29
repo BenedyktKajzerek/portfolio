@@ -1,48 +1,61 @@
 import React from "react";
-import { Button } from "../../ui/button";
-import { FiGithub } from "react-icons/fi";
-import { PiLinkedinLogoBold } from "react-icons/pi";
-import { GITHUB, LINKEDIN, TEXT, TITLE } from "../../../data";
 import Typewriter from "typewriter-effect";
+import { Button } from "../../ui/button";
+import { PiLinkedinLogoBold } from "react-icons/pi";
+import { RiGithubLine } from "react-icons/ri";
+import {
+  GITHUB,
+  LINKEDIN,
+  HERO_TEXT,
+  HERO_TITLE,
+  HERO_TITLE_WRITER,
+} from "../../../data";
 import cv from "../../../assets/cv.txt";
 
 const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative flex h-screen w-full items-start pt-28 lg:items-center lg:pt-0"
+      className="relative flex min-h-screen w-full items-start pt-28 lg:items-center"
     >
-      <div className="container flex justify-center">
-        <div className="relative flex w-full max-w-[950px] flex-col-reverse items-center gap-12 text-center lg:flex-row lg:pt-0 lg:text-start">
+      <div className="container">
+        <div className="relative flex w-full max-w-[1200px] flex-col-reverse items-center gap-12 text-center lg:flex-row lg:justify-between lg:pt-0 lg:text-start">
           {/* Main Content */}
           <div className="flex w-full max-w-[550px] flex-shrink-0 flex-col justify-center">
             <div className="flex flex-col items-center gap-6 lg:items-start">
-              <h1 className="xs:text-4xl text-3xl font-semibold leading-tight sm:text-5xl">
-                Hi, I'm <span className="text-primary">Benedykt</span>
+              <h1 className="text-3xl font-semibold leading-tight xs:text-4xl sm:text-5xl">
+                {HERO_TITLE[0]}
+                <span className="text-primary"> {HERO_TITLE[1]}</span>
                 <Typewriter
                   options={{
-                    strings: TITLE,
+                    strings: HERO_TITLE_WRITER,
                     autoStart: true,
                     loop: true,
                   }}
                 />
               </h1>
-              <p className="text-base sm:text-lg">{TEXT}</p>
+              <p className="text-base text-grey sm:text-lg">{HERO_TEXT}</p>
               <div className="flex gap-4">
                 <Button
                   href={cv}
                   text="Download CV"
-                  className="bg-primary text-white"
+                  className="bg-primary text-white before:bg-white hover:text-black"
                   download={true}
                 />
-                <Button href="#Contact" text="Contact Me" />
+                <Button href="#contact" text="Contact Me" />
               </div>
               <div className="ml-3 flex gap-3 lg:ml-0">
                 <a href={LINKEDIN}>
-                  <PiLinkedinLogoBold size={28} />
+                  <PiLinkedinLogoBold
+                    size={28}
+                    className="transition-colors hover:fill-primary"
+                  />
                 </a>
                 <a href={GITHUB}>
-                  <FiGithub size={28} />
+                  <RiGithubLine
+                    size={28}
+                    className="transition-colors hover:fill-primary"
+                  />
                 </a>
               </div>
             </div>

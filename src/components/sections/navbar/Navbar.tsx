@@ -32,13 +32,15 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="fixed left-0 top-0 z-[999] w-full">
-      <nav className="flex items-center justify-between bg-black px-6 py-6 text-white shadow-sm shadow-gray-500 sm:px-12">
+      <nav className="flex items-center justify-between bg-grey-dark px-6 py-6 text-white sm:px-12">
         {/* Navbar Logo & Links */}
         <h3 className="text-xl font-bold">Benedykt.dev</h3>
         <ul className="hidden gap-4 text-[17px] font-semibold lg:flex">
           {headerLinks.map((link, index) => (
             <a key={index} href={link.href}>
-              <li>{link.title}</li>
+              <li className="transition-colors hover:text-primary">
+                {link.title}
+              </li>
             </a>
           ))}
         </ul>
