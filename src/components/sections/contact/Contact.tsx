@@ -1,6 +1,11 @@
 import React from "react";
-import { LABELS, PUBLIC_ACCESS_KEY } from "../../../data";
+import {
+  CONTACT_HEADER,
+  CONTACT_LABELS,
+  PUBLIC_ACCESS_KEY,
+} from "../../../data";
 import { FormLabel } from "./components/FormLabel";
+import { btnHoverAnimation } from "../../ui/button";
 import Swal from "sweetalert2";
 
 const Contact: React.FC = () => {
@@ -41,11 +46,11 @@ const Contact: React.FC = () => {
       <div className="container">
         <div className="flex w-full max-w-[580px] flex-col">
           <h2 className="pb-4 text-3xl font-semibold sm:text-5xl md:text-7xl">
-            Contact Me
+            {CONTACT_HEADER}
           </h2>
 
           <form onSubmit={onSubmit}>
-            {LABELS.map((label) => (
+            {CONTACT_LABELS.map((label) => (
               <FormLabel
                 key={label.id}
                 id={label.id}
@@ -55,9 +60,9 @@ const Contact: React.FC = () => {
             ))}
             <button
               type="submit"
-              className="mt-8 text-nowrap rounded-lg bg-white px-4 py-[10px] text-sm font-medium text-black"
+              className={`${btnHoverAnimation} mt-8 text-nowrap rounded-lg bg-white px-4 py-[10px] text-sm font-medium text-black`}
             >
-              Submit
+              <span className="z-[10]">Submit</span>
             </button>
           </form>
         </div>

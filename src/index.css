@@ -49,24 +49,24 @@ body {
 
 .hero-image {
   background-image: url(/src/assets/img.png);
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border: 3px solid var(--primary);
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  border-radius: 50% 40% 35% 65% / 65% 35% 65% 35%;
   transition: all 1s ease-in-out;
   animation: hero-animation 7s ease-in-out infinite;
 }
 
 @keyframes hero-animation {
   0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 50% 40% 35% 65% / 65% 35% 65% 35%;
   }
   50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    border-radius: 35% 70% 65% 40% / 55% 65% 35% 65%;
   }
   100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 50% 40% 35% 65% / 65% 35% 65% 35%;
   }
 }
 

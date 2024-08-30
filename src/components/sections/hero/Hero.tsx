@@ -20,9 +20,9 @@ const Hero: React.FC = () => {
     >
       <div className="container">
         <div className="relative flex w-full max-w-[1200px] flex-col-reverse items-center gap-12 text-center lg:flex-row lg:justify-between lg:pt-0 lg:text-start">
-          {/* Main Content */}
           <div className="flex w-full max-w-[550px] flex-shrink-0 flex-col justify-center">
             <div className="flex flex-col items-center gap-6 lg:items-start">
+              {/* Hero Content */}
               <h1 className="text-3xl font-semibold leading-tight xs:text-4xl sm:text-5xl">
                 {HERO_TITLE[0]}
                 <span className="text-primary"> {HERO_TITLE[1]}</span>
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Image */}
+          {/* Hero Image */}
           <div className="hero-image h-[250px] w-full max-w-[250px] sm:h-[350px] sm:max-w-[350px]" />
         </div>
       </div>

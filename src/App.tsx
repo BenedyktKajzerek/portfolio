@@ -3,6 +3,7 @@ import { About } from "./components/sections/about";
 import { Contact } from "./components/sections/contact";
 import { Hero } from "./components/sections/hero";
 import { Navbar } from "./components/sections/navbar";
+import { Skills } from "./components/sections/skills";
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <main>
         <Hero />
         <About />
-        {/* <Skills />
-          <Projects /> */}
+        <Skills />
+        {/* <Projects /> */}
         <Contact />
       </main>
     </>
