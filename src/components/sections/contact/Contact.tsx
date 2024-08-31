@@ -5,7 +5,6 @@ import {
   PUBLIC_ACCESS_KEY,
 } from "../../../data";
 import { FormLabel } from "./components/FormLabel";
-import { btnHoverAnimation } from "../../ui/button";
 import Swal from "sweetalert2";
 
 const Contact: React.FC = () => {
@@ -60,7 +59,7 @@ const Contact: React.FC = () => {
             ))}
             <button
               type="submit"
-              className={`${btnHoverAnimation} mt-8 text-nowrap rounded-lg bg-white px-4 py-[10px] text-sm font-medium text-black`}
+              className="btn-hover-animation mt-8 text-nowrap rounded-lg bg-white px-4 py-[10px] text-sm font-medium text-black"
             >
               <span className="z-[10]">Submit</span>
             </button>
