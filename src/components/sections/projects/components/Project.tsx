@@ -42,6 +42,7 @@ const Project: React.FC<ProjectProps> = ({
       {/* Title and Information */}
       <div className="flex flex-col lg:w-1/2">
         <ProjectTiles
+          image={image}
           title={title}
           description={description}
           projectHref={projectHref}

@@ -9,6 +9,17 @@ const LINKEDIN: string = "https://www.linkedin.com/in/benedykt-kajzerek/";
 // ============
 // Hero Section
 // ============
+const HEADER_LINKS = [
+  { title: "Home", href: "/#" },
+  { title: "About", href: "/#about" },
+  { title: "Skills", href: "/#skills" },
+  { title: "Projects", href: "/#projects" },
+  { title: "Contact", href: "/#contact" },
+];
+
+// ============
+// Hero Section
+// ============
 const HERO_TITLE: string[] = ["Hi, I'm", "Benedykt"];
 const HERO_TITLE_WRITER: string[] = [
   "Software Developer",
@@ -29,22 +40,6 @@ const ABOUT_TITLE: string[] = [
 const ABOUT_TEXT: string[] = [
   "Currently, I'm focused on mastering React.js with Typescript and Tailwind, working towards my ambition of becoming a full-stack developer.",
   "Beyond the keyboard, you'll find me enjoying gym workouts, calisthenics, and running. I'm also non-fiction and podcasts enthusiast, who's trying new things whenever the opportunity comes my way.",
-];
-
-// ===============
-// Contact Section
-// ===============
-const CONTACT_HEADER: string = "Contact Me";
-const PUBLIC_ACCESS_KEY: string = "dac2ef20-1d4c-4098-b411-4981f8bb54e8";
-const CONTACT_LABELS: Label[] = [
-  { id: "name", type: "text", placeholder: "John Doe" },
-  { id: "email", type: "email", placeholder: "email@gmail.com" },
-  {
-    id: "message",
-    type: "textarea",
-    placeholder: "Type your message here.",
-    className: "h-[150px]",
-  },
 ];
 
 // ==============
@@ -103,7 +98,7 @@ const PROJECTS: Project[] = [
     title: "Soundit",
     description:
       "Soundit lets you bridge the gap between YouTube and Spotify by easily transferring your playlists. Effortlessly select the playlist you want to migrate, customize its details, and choose which tracks to bring along for the ride.",
-    projectHref: "",
+    projectHref: "/project/soundit",
     githubHref: "https://github.com/BenedyktKajzerek/soundit",
   },
   {
@@ -111,7 +106,7 @@ const PROJECTS: Project[] = [
     title: "Ecommerce",
     description:
       "An elite eCommerce platform dedicated to premium supercar detailing. With a cutting-edge UI and UX, this website ensures a luxurious and intuitive  experience.",
-    projectHref: "",
+    projectHref: "/project/ecommerce",
     githubHref: "https://github.com/BenedyktKajzerek/ecommerce",
     rowReverse: true,
   },
@@ -120,7 +115,7 @@ const PROJECTS: Project[] = [
     title: "Game of Words",
     description:
       "Dive into the world of wordplay with this web-based app, where you can enjoy endless rounds of a popular word-guessing game. Create an account, track your progress, and keep your winning streak alive.",
-    projectHref: "",
+    projectHref: "/project/game-of-words",
     githubHref: "https://github.com/BenedyktKajzerek/game-of-words",
   },
   {
@@ -128,9 +123,25 @@ const PROJECTS: Project[] = [
     title: "Portfolio",
     description:
       "A sleek and modern personal portfolio created with React.js, TypeScript, and Tailwind. The minimalist design emphasizes key information, and ensures presentation of the most important content in a clean manner.",
-    projectHref: "",
+    projectHref: "/project/portfolio",
     githubHref: "https://github.com/BenedyktKajzerek/portfolio",
     rowReverse: true,
+  },
+];
+
+// ===============
+// Contact Section
+// ===============
+const CONTACT_HEADER: string = "Contact Me";
+const PUBLIC_ACCESS_KEY: string = "dac2ef20-1d4c-4098-b411-4981f8bb54e8";
+const CONTACT_LABELS: Label[] = [
+  { id: "name", type: "text", placeholder: "John Doe" },
+  { id: "email", type: "email", placeholder: "email@gmail.com" },
+  {
+    id: "message",
+    type: "textarea",
+    placeholder: "Type your message here.",
+    className: "h-[150px]",
   },
 ];
 
@@ -139,6 +150,7 @@ export {
   GITHUB,
   LINKEDIN,
   INSTAGRAM,
+  HEADER_LINKS,
   HERO_TITLE,
   HERO_TITLE_WRITER,
   HERO_TEXT,
