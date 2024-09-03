@@ -50,12 +50,14 @@ const Hero: React.FC = () => {
                   <PiLinkedinLogoBold
                     size={28}
                     className="transition-colors hover:fill-primary"
+                    target="_blank"
                   />
                 </a>
                 <a href={GITHUB}>
                   <RiGithubLine
                     size={28}
                     className="transition-colors hover:fill-primary"
+                    target="_blank"
                   />
                 </a>
               </div>

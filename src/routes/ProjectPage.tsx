@@ -41,8 +41,8 @@ const ProjectPage: React.FC = () => {
 
             {/* Project Gallery */}
             <div>
-              {project.images.map((image) => (
-                <div className="mt-28 max-w-[600px]">
+              {project.images.map((image, index) => (
+                <div key={index} className="mt-28 max-w-[600px]">
                   <figure>
                     <img
                       src={image.imageSrc}

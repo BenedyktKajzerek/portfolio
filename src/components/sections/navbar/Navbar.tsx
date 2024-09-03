@@ -3,6 +3,7 @@ import { IoClose } from "react-icons/io5";
 import { LuMenu } from "react-icons/lu";
 import { HEADER_LINKS } from "../../../data";
 import { AnimatePresence, motion } from "framer-motion";
+import ScrollToAnchor from "../../../utils/ScrollToAnchor";
 
 const navbarVariants = {
   initial: {
@@ -79,68 +80,72 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <header className="fixed left-0 top-0 z-[999] w-full">
-      <nav className="flex items-center justify-between bg-grey-dark px-6 py-6 text-white sm:px-12">
-        {/* Navbar Logo & Links */}
-        <h3 className="z-[999] text-xl font-bold">
-          <a href={HEADER_LINKS[0].href}>Benedykt.dev</a>
-        </h3>
-        <ul className="hidden gap-4 text-[17px] font-semibold lg:flex">
-          {HEADER_LINKS.map((link, index) => (
-            <a key={index} href={link.href}>
-              <li className="transition-colors hover:text-primary">
-                {link.title}
-              </li>
-            </a>
-          ))}
-        </ul>
+    <>
+      <ScrollToAnchor />
 
-        {/* Navbar Hamburger */}
-        <button
-          onClick={() => setIsNavbarOpen((n) => !n)}
-          className="z-[999] block lg:hidden"
-        >
-          {isNavbarOpen ? <IoClose size={28} /> : <LuMenu size={28} />}
-        </button>
+      <header className="fixed left-0 top-0 z-[999] w-full">
+        <nav className="flex items-center justify-between bg-grey-dark px-6 py-6 text-white sm:px-12">
+          {/* Navbar Logo & Links */}
+          <h3 className="z-[999] text-xl font-bold">
+            <a href={HEADER_LINKS[0].href}>Benedykt.dev</a>
+          </h3>
+          <ul className="hidden gap-4 text-[17px] font-semibold lg:flex">
+            {HEADER_LINKS.map((link, index) => (
+              <a key={index} href={link.href}>
+                <li className="transition-colors hover:text-primary">
+                  {link.title}
+                </li>
+              </a>
+            ))}
+          </ul>
 
-        {/* Mobile Navbar */}
-        <AnimatePresence>
-          {isNavbarOpen && (
-            <motion.div
-              variants={navbarVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              className="fixed left-0 top-0 h-screen w-full origin-top bg-grey-dark p-10 text-center"
-            >
-              <div className="flex h-full flex-col">
-                <motion.div
-                  variants={containerVariants}
-                  initial="initial"
-                  animate="open"
-                  exit="initial"
-                  className="flex h-full flex-col items-center justify-center gap-12"
-                >
-                  {HEADER_LINKS.map((link, index) => (
-                    <div className="overflow-hidden">
-                      <motion.div variants={mobileLinkVariants}>
-                        <a
-                          key={index}
-                          href={link.href}
-                          className="overflow-hidden text-4xl font-semibold transition-colors hover:text-primary"
-                        >
-                          <div>{link.title}</div>
-                        </a>
-                      </motion.div>
-                    </div>
-                  ))}
-                </motion.div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </nav>
-    </header>
+          {/* Navbar Hamburger */}
+          <button
+            onClick={() => setIsNavbarOpen((n) => !n)}
+            className="z-[999] block lg:hidden"
+          >
+            {isNavbarOpen ? <IoClose size={28} /> : <LuMenu size={28} />}
+          </button>
+
+          {/* Mobile Navbar */}
+          <AnimatePresence>
+            {isNavbarOpen && (
+              <motion.div
+                variants={navbarVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="fixed left-0 top-0 h-screen w-full origin-top bg-grey-dark p-10 text-center"
+              >
+                <div className="flex h-full flex-col">
+                  <motion.div
+                    variants={containerVariants}
+                    initial="initial"
+                    animate="open"
+                    exit="initial"
+                    className="flex h-full flex-col items-center justify-center gap-12"
+                  >
+                    {HEADER_LINKS.map((link, index) => (
+                      <div className="overflow-hidden">
+                        <motion.div variants={mobileLinkVariants}>
+                          <a
+                            key={index}
+                            href={link.href}
+                            className="overflow-hidden text-4xl font-semibold transition-colors hover:text-primary"
+                          >
+                            <div>{link.title}</div>
+                          </a>
+                        </motion.div>
+                      </div>
+                    ))}
+                  </motion.div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </nav>
+      </header>
+    </>
   );
 };
 

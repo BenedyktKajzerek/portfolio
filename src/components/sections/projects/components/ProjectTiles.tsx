@@ -42,6 +42,7 @@ const ProjectTiles: React.FC<ProjectTilesProps> = ({
         href={githubHref}
         className="project-tile border-none text-right transition-colors hover:text-primary"
         aria-label={`See ${title} code on GitHub`}
+        target="_blank"
       >
         <div>
           See Code <FaExternalLinkAlt size={24} className="inline-block" />

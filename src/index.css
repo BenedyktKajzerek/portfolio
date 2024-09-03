@@ -17,6 +17,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--black);
   color: var(--white);
@@ -54,7 +58,7 @@ body {
 /* ================ */
 
 .hero-image {
-  background-image: url(/src/assets/img.png);
+  background-image: url(/src/assets/hero-img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

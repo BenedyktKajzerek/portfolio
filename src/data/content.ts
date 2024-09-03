@@ -8,9 +8,9 @@ const LINKEDIN: string = "https://www.linkedin.com/in/benedykt-kajzerek/";
 const CV: string =
   "https://drive.google.com/file/d/1JPdU5V-AHFG6TF3arK_YLfuLIxt-W-B9/view?usp=sharing";
 
-// ============
-// Hero Section
-// ============
+// ======
+// Navbar
+// ======
 const HEADER_LINKS = [
   { title: "Home", href: "/#" },
   { title: "About", href: "/#about" },
@@ -34,7 +34,7 @@ const HERO_TEXT: string =
 // =============
 // About Section
 // =============
-import ABOUT_IMAGE from "../assets/img2.jpg";
+import ABOUT_IMAGE from "../assets/about-img.jpg";
 const ABOUT_TITLE: string[] = [
   "Passionate Software Developer",
   "Driven by Innovation",
@@ -101,7 +101,7 @@ const PROJECTS: Project[] = [
     image: soundit,
     title: "Soundit",
     description:
-      "Soundit lets you bridge the gap between YouTube and Spotify by easily transferring your playlists. Effortlessly select the playlist you want to migrate, customize its details, and choose which tracks to bring along for the ride.",
+      "Soundit lets you bridge the gap between YouTube and Spotify by easily transferring your playlists. Effortlessly select the playlist you want to convert, customize its details, and select the specific songs you want to transfer.",
     projectHref: "/project/soundit",
     githubHref: "https://github.com/BenedyktKajzerek/soundit",
   },
