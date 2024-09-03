@@ -27,7 +27,7 @@ const Project: React.FC<ProjectProps> = ({
         <img
           src={image}
           alt={`${title} preview`}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-fill"
         />
 
         {/* Centered Circle Image */}
@@ -36,7 +36,7 @@ const Project: React.FC<ProjectProps> = ({
           alt={`${title} preview`}
           className="absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45 rounded-full object-cover transition-all duration-300 group-hover:rotate-45"
         />
-        <div className="absolute left-1/2 top-1/2 h-[50px] w-[50px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-black" />
+        <div className="absolute left-1/2 top-1/2 h-[50px] w-[50px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white" />
       </div>
 
       {/* Title and Information */}

@@ -10,7 +10,7 @@ import {
   HERO_TITLE,
   HERO_TITLE_WRITER,
 } from "../../../data";
-import cv from "../../../assets/cv.txt";
+import { CV } from "../../../data";
 
 const Hero: React.FC = () => {
   return (
@@ -37,10 +37,11 @@ const Hero: React.FC = () => {
               <p className="text-base text-grey sm:text-lg">{HERO_TEXT}</p>
               <div className="flex gap-4">
                 <Button
-                  href={cv}
+                  href={CV}
                   text="Download CV"
                   className="bg-primary text-white before:bg-white hover:text-black"
                   download={true}
+                  target="_blank"
                 />
                 <Button href="#contact" text="Contact Me" />
               </div>

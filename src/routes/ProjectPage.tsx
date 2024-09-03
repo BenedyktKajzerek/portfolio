@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "../components/sections/navbar";
-import { Link, useParams } from "react-router-dom";
+import { Link, ScrollRestoration, useParams } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 import { PROJECTS_CONTENT } from "../data";
 import { RiGithubLine } from "react-icons/ri";
@@ -16,9 +16,10 @@ const ProjectPage: React.FC = () => {
 
   return (
     <>
+      <ScrollRestoration />
       <Navbar />
 
-      <main className="pt-24">
+      <main className="pt-32">
         <div className="container">
           <article className="flex max-w-[600px] flex-col">
             <div>
@@ -43,9 +44,13 @@ const ProjectPage: React.FC = () => {
               {project.images.map((image) => (
                 <div className="mt-28 max-w-[600px]">
                   <figure>
-                    <img src={image.imageSrc} alt={image.imageSrc} />
+                    <img
+                      src={image.imageSrc}
+                      alt={image.imageSrc}
+                      className="shadow-lg shadow-grey-dark"
+                    />
                     <figcaption className="mt-4 px-8 text-center text-xs text-grey">
-                      Caption for this amazing photo of this amazing project.
+                      {image.imageDescription}
                     </figcaption>
                   </figure>
                 </div>

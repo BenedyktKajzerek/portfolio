@@ -5,6 +5,8 @@ const X: string = "https://x.com/benedykt_";
 const GITHUB: string = "https://github.com/BenedyktKajzerek";
 const INSTAGRAM: string = "https://www.instagram.com/benedykt_kajzerek/";
 const LINKEDIN: string = "https://www.linkedin.com/in/benedykt-kajzerek/";
+const CV: string =
+  "https://drive.google.com/file/d/1JPdU5V-AHFG6TF3arK_YLfuLIxt-W-B9/view?usp=sharing";
 
 // ============
 // Hero Section
@@ -89,12 +91,14 @@ const SKILLS: Skills[] = [
 // ================
 // Projects Section
 // ================
-import image from "../assets/img.png";
-import image2 from "../assets/img2.jpg";
+import soundit from "../assets/projects/soundit/thumbnail.png";
+import ecommerce from "../assets/projects/ecommerce/thumbnail.png";
+import gameofwords from "../assets/projects/gameofwords/thumbnail.png";
+import portfolio from "../assets/projects/portfolio/thumbnail.png";
 
 const PROJECTS: Project[] = [
   {
-    image: image,
+    image: soundit,
     title: "Soundit",
     description:
       "Soundit lets you bridge the gap between YouTube and Spotify by easily transferring your playlists. Effortlessly select the playlist you want to migrate, customize its details, and choose which tracks to bring along for the ride.",
@@ -102,7 +106,7 @@ const PROJECTS: Project[] = [
     githubHref: "https://github.com/BenedyktKajzerek/soundit",
   },
   {
-    image: image2,
+    image: ecommerce,
     title: "Ecommerce",
     description:
       "An elite eCommerce platform dedicated to premium supercar detailing. With a cutting-edge UI and UX, this website ensures a luxurious and intuitive  experience.",
@@ -111,15 +115,15 @@ const PROJECTS: Project[] = [
     rowReverse: true,
   },
   {
-    image: image,
+    image: gameofwords,
     title: "Game of Words",
     description:
       "Dive into the world of wordplay with this web-based app, where you can enjoy endless rounds of a popular word-guessing game. Create an account, track your progress, and keep your winning streak alive.",
-    projectHref: "/project/game-of-words",
+    projectHref: "/project/gameofwords",
     githubHref: "https://github.com/BenedyktKajzerek/game-of-words",
   },
   {
-    image: image2,
+    image: portfolio,
     title: "Portfolio",
     description:
       "A sleek and modern personal portfolio created with React.js, TypeScript, and Tailwind. The minimalist design emphasizes key information, and ensures presentation of the most important content in a clean manner.",
@@ -146,6 +150,7 @@ const CONTACT_LABELS: Label[] = [
 ];
 
 export {
+  CV,
   X,
   GITHUB,
   LINKEDIN,
