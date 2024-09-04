@@ -126,12 +126,12 @@ const Navbar: React.FC = () => {
                     className="flex h-full flex-col items-center justify-center gap-12"
                   >
                     {HEADER_LINKS.map((link, index) => (
-                      <div className="overflow-hidden">
+                      <div key={index} className="overflow-hidden">
                         <motion.div variants={mobileLinkVariants}>
                           <a
-                            key={index}
                             href={link.href}
                             className="overflow-hidden text-4xl font-semibold transition-colors hover:text-primary"
+                            onClick={() => setIsNavbarOpen((n) => !n)}
                           >
                             <div>{link.title}</div>
                           </a>

@@ -4,13 +4,13 @@ import { Button } from "../../ui/button";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { RiGithubLine } from "react-icons/ri";
 import {
+  CV,
   GITHUB,
   LINKEDIN,
   HERO_TEXT,
   HERO_TITLE,
   HERO_TITLE_WRITER,
 } from "../../../data";
-import { CV } from "../../../data";
 
 const Hero: React.FC = () => {
   return (
