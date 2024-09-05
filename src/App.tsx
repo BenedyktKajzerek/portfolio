@@ -5,6 +5,7 @@ import { Hero } from "./components/sections/hero";
 import { Navbar } from "./components/sections/navbar";
 import { Projects } from "./components/sections/projects";
 import { Skills } from "./components/sections/skills";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Projects />
         <Contact />
       </main>
+
+      <SpeedInsights />
     </>
   );
 }
