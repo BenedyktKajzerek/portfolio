@@ -29,7 +29,7 @@ const HERO_TITLE_WRITER: string[] = [
   "Gym Enjoyer",
 ];
 const HERO_TEXT: string =
-  "Hi, I'm Benedykt Kajzerek. A passionate Software Developer based in Poland who can help you build fully responsive and interactive web applications.";
+  "Hi, I'm Benedykt Kajzerek. A passionate Software Developer based in Poland who will help you build fully responsive and interactive web applications.";
 
 // =============
 // About Section

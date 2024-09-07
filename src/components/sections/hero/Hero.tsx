@@ -46,18 +46,16 @@ const Hero: React.FC = () => {
                 <Button href="#contact" text="Contact Me" />
               </div>
               <div className="ml-3 flex gap-3 lg:ml-0">
-                <a href={LINKEDIN}>
+                <a href={LINKEDIN} target="_blank">
                   <PiLinkedinLogoBold
                     size={28}
                     className="transition-colors hover:fill-primary"
-                    target="_blank"
                   />
                 </a>
-                <a href={GITHUB}>
+                <a href={GITHUB} target="_blank">
                   <RiGithubLine
                     size={28}
                     className="transition-colors hover:fill-primary"
-                    target="_blank"
                   />
                 </a>
               </div>
