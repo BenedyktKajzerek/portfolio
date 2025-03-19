@@ -37,6 +37,16 @@ const ProjectPage: React.FC = () => {
               </h1>
 
               <p className="text-grey">{project.description}</p>
+
+              {project.websiteHref && (
+                <Link
+                  to={project.websiteHref}
+                  className="mt-6 block"
+                  target="_blank"
+                >
+                  Visit the website
+                </Link>
+              )}
             </div>
 
             {/* Project Gallery */}

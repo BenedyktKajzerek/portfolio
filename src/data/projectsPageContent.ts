@@ -1,8 +1,21 @@
-import hero_1 from "../assets/projects/soundit/hero.png";
-import hero_2 from "../assets/projects/soundit/select-playlist.png";
-import hero_3 from "../assets/projects/soundit/converting.png";
-import hero_4 from "../assets/projects/soundit/select-track.png";
-import hero_5 from "../assets/projects/soundit/delete.png";
+import ratethatschool_1 from "../assets/projects/ratethatschool/hero.png";
+import ratethatschool_2 from "../assets/projects/ratethatschool/add-review-step-0.png";
+import ratethatschool_3 from "../assets/projects/ratethatschool/add-review-step-1.png";
+import ratethatschool_4 from "../assets/projects/ratethatschool/add-review-step-2.png";
+import ratethatschool_5 from "../assets/projects/ratethatschool/add-review-step-3.png";
+import ratethatschool_6 from "../assets/projects/ratethatschool/add-review-step-4.png";
+import ratethatschool_7 from "../assets/projects/ratethatschool/city-schools.png";
+import ratethatschool_8 from "../assets/projects/ratethatschool/school-reviews.png";
+import ratethatschool_9 from "../assets/projects/ratethatschool/popular-section.png";
+import ratethatschool_10 from "../assets/projects/ratethatschool/all-schools.png";
+import ratethatschool_11 from "../assets/projects/ratethatschool/my-reviews.png";
+import ratethatschool_12 from "../assets/projects/ratethatschool/liked-reviews.png";
+
+import soundit_1 from "../assets/projects/soundit/hero.png";
+import soundit_2 from "../assets/projects/soundit/select-playlist.png";
+import soundit_3 from "../assets/projects/soundit/converting.png";
+import soundit_4 from "../assets/projects/soundit/select-track.png";
+import soundit_5 from "../assets/projects/soundit/delete.png";
 
 import ecommerce_1 from "../assets/projects/ecommerce/hero.png";
 import ecommerce_2 from "../assets/projects/ecommerce/section2.png";
@@ -14,12 +27,89 @@ import gameofwords_1 from "../assets/projects/gameofwords/hero.png";
 import gameofwords_2 from "../assets/projects/gameofwords/game.png";
 import gameofwords_3 from "../assets/projects/gameofwords/register.png";
 
-import portfolio_1 from "../assets/projects/portfolio/hero.png";
-import portfolio_2 from "../assets/projects/portfolio/about.png";
-import portfolio_3 from "../assets/projects/portfolio/skills.png";
-import portfolio_4 from "../assets/projects/portfolio/contact.png";
+// import portfolio_1 from "../assets/projects/portfolio/hero.png";
+// import portfolio_2 from "../assets/projects/portfolio/about.png";
+// import portfolio_3 from "../assets/projects/portfolio/skills.png";
+// import portfolio_4 from "../assets/projects/portfolio/contact.png";
 
 const PROJECTS_CONTENT: ProjectsContent = {
+  ratethatschool: {
+    websiteHref: "https://ratethatschool.com",
+    title: "ratethatschool",
+    description:
+      "RateThatSchool was built with Next.js, React, TypeScript, and Tailwind CSS, leveraging Firebase for data storage and authentication, and Cloudinary for image management. Firebase Authentication powers the signup and login process, ensuring a seamless and secure user experience.",
+    githubHref: "https://github.com/BenedyktKajzerek/ratethatschool",
+    images: [
+      {
+        imageSrc: ratethatschool_1,
+        imageAlt: "RateThatSchool",
+        imageDescription:
+          "Hero section showcasing the platform's purpose and features",
+      },
+      {
+        imageSrc: ratethatschool_2,
+        imageAlt: "RateThatSchool",
+        imageDescription:
+          "Step 0: Enter your school's name if it does not already exist on the platform",
+      },
+      {
+        imageSrc: ratethatschool_3,
+        imageAlt: "RateThatSchool",
+        imageDescription: "Step 1: Select your relationship with the school",
+      },
+      {
+        imageSrc: ratethatschool_4,
+        imageAlt: "RateThatSchool",
+        imageDescription:
+          "Step 2: Provide a rating for your school based on your experience",
+      },
+      {
+        imageSrc: ratethatschool_5,
+        imageAlt: "RateThatSchool",
+        imageDescription:
+          "Step 3: Write a detailed review and optionally upload images",
+      },
+      {
+        imageSrc: ratethatschool_6,
+        imageAlt: "RateThatSchool",
+        imageDescription:
+          "Step 4: Review your submission before submitting your review",
+      },
+      {
+        imageSrc: ratethatschool_7,
+        imageAlt: "RateThatSchool",
+        imageDescription:
+          "Browse schools within a specific city to explore available reviews",
+      },
+      {
+        imageSrc: ratethatschool_8,
+        imageAlt: "RateThatSchool",
+        imageDescription: "View detailed reviews and ratings for your school",
+      },
+      {
+        imageSrc: ratethatschool_9,
+        imageAlt: "RateThatSchool",
+        imageDescription:
+          "Discover the most popular schools and cities based on user engagement",
+      },
+      {
+        imageSrc: ratethatschool_10,
+        imageAlt: "RateThatSchool",
+        imageDescription:
+          "Access a directory of all schools listed on the platform",
+      },
+      {
+        imageSrc: ratethatschool_11,
+        imageAlt: "RateThatSchool",
+        imageDescription: "Review your approved reviews",
+      },
+      {
+        imageSrc: ratethatschool_12,
+        imageAlt: "RateThatSchool",
+        imageDescription: "View a collection of reviews you have liked",
+      },
+    ],
+  },
   soundit: {
     title: "soundit",
     description:
@@ -27,27 +117,27 @@ const PROJECTS_CONTENT: ProjectsContent = {
     githubHref: "https://github.com/BenedyktKajzerek/soundit",
     images: [
       {
-        imageSrc: hero_1,
+        imageSrc: soundit_1,
         imageAlt: "Soundit",
         imageDescription: "Hero section",
       },
       {
-        imageSrc: hero_2,
+        imageSrc: soundit_2,
         imageAlt: "Soundit",
         imageDescription: "1. Select playlist",
       },
       {
-        imageSrc: hero_3,
+        imageSrc: soundit_3,
         imageAlt: "Soundit",
         imageDescription: "2. Edit details",
       },
       {
-        imageSrc: hero_4,
+        imageSrc: soundit_4,
         imageAlt: "Soundit",
         imageDescription: "3. Pick tracks, hit convert and enjoy!",
       },
       {
-        imageSrc: hero_5,
+        imageSrc: soundit_5,
         imageAlt: "Soundit",
         imageDescription: "You can also delete playlist if you want",
       },
@@ -109,37 +199,38 @@ const PROJECTS_CONTENT: ProjectsContent = {
       },
     ],
   },
-  portfolio: {
-    title: "portfolio",
-    description:
-      "Crafted with a combination of React, TypeScript, and Tailwind CSS, this personal portfolio represents a commitment to both aesthetic simplicity and technical robustness. The focus on readability and maintainability ensures the codebase remains clean and scalable for future enhancements. ",
-    githubHref: "https://github.com/BenedyktKajzerek/portfolio",
-    images: [
-      {
-        imageSrc: portfolio_1,
-        imageAlt: "Portfolio",
-        imageDescription: "Hero section",
-      },
-      {
-        imageSrc: portfolio_2,
-        imageAlt: "Portfolio",
-        imageDescription: "About section",
-      },
-      {
-        imageSrc: portfolio_3,
-        imageAlt: "Portfolio",
-        imageDescription: "Skills section",
-      },
-      {
-        imageSrc: portfolio_4,
-        imageAlt: "Portfolio",
-        imageDescription: "Contact section",
-      },
-    ],
-  },
+  // portfolio: {
+  //   title: "portfolio",
+  //   description:
+  //     "Crafted with a combination of React, TypeScript, and Tailwind CSS, this personal portfolio represents a commitment to both aesthetic simplicity and technical robustness. The focus on readability and maintainability ensures the codebase remains clean and scalable for future enhancements. ",
+  //   githubHref: "https://github.com/BenedyktKajzerek/portfolio",
+  //   images: [
+  //     {
+  //       imageSrc: portfolio_1,
+  //       imageAlt: "Portfolio",
+  //       imageDescription: "Hero section",
+  //     },
+  //     {
+  //       imageSrc: portfolio_2,
+  //       imageAlt: "Portfolio",
+  //       imageDescription: "About section",
+  //     },
+  //     {
+  //       imageSrc: portfolio_3,
+  //       imageAlt: "Portfolio",
+  //       imageDescription: "Skills section",
+  //     },
+  //     {
+  //       imageSrc: portfolio_4,
+  //       imageAlt: "Portfolio",
+  //       imageDescription: "Contact section",
+  //     },
+  //   ],
+  // },
 };
 
 type Project = {
+  websiteHref?: string;
   title: string;
   description: string;
   githubHref: string;

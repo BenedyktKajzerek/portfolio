@@ -27,7 +27,7 @@ const Project: React.FC<ProjectProps> = ({
         <img
           src={image}
           alt={`${title} preview`}
-          className="h-full w-full object-fill"
+          className="h-full w-full object-cover"
         />
 
         {/* Centered Circle Image */}

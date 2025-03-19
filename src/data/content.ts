@@ -91,12 +91,21 @@ const SKILLS: Skills[] = [
 // ================
 // Projects Section
 // ================
+import ratethatschool from "../assets/projects/ratethatschool/thumbnail.png";
 import soundit from "../assets/projects/soundit/thumbnail.png";
 import ecommerce from "../assets/projects/ecommerce/thumbnail.png";
 import gameofwords from "../assets/projects/gameofwords/thumbnail.png";
-import portfolio from "../assets/projects/portfolio/thumbnail.png";
+// import portfolio from "../assets/projects/portfolio/thumbnail.png";
 
 const PROJECTS: Project[] = [
+  {
+    image: ratethatschool,
+    title: "RateThatSchool",
+    description:
+      "RateThatSchool lets you discover school reviews, ratings, and recommendations from students worldwide. You can share your experiences and help others find the best schools.",
+    projectHref: "/project/ratethatschool",
+    githubHref: "https://github.com/BenedyktKajzerek/ratethatschool",
+  },
   {
     image: soundit,
     title: "Soundit",
@@ -122,15 +131,15 @@ const PROJECTS: Project[] = [
     projectHref: "/project/gameofwords",
     githubHref: "https://github.com/BenedyktKajzerek/game-of-words",
   },
-  {
-    image: portfolio,
-    title: "Portfolio",
-    description:
-      "A sleek and modern personal portfolio created with React.js, TypeScript, and Tailwind. The minimalist design emphasizes key information, and ensures presentation of the most important content in a clean manner.",
-    projectHref: "/project/portfolio",
-    githubHref: "https://github.com/BenedyktKajzerek/portfolio",
-    rowReverse: true,
-  },
+  // {
+  //   image: portfolio,
+  //   title: "Portfolio",
+  //   description:
+  //     "A sleek and modern personal portfolio created with React.js, TypeScript, and Tailwind. The minimalist design emphasizes key information, and ensures presentation of the most important content in a clean manner.",
+  //   projectHref: "/project/portfolio",
+  //   githubHref: "https://github.com/BenedyktKajzerek/portfolio",
+  //   rowReverse: true,
+  // },
 ];
 
 // ===============
