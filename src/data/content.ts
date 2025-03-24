@@ -6,7 +6,7 @@ const GITHUB: string = "https://github.com/BenedyktKajzerek";
 const INSTAGRAM: string = "https://www.instagram.com/benedykt_kajzerek/";
 const LINKEDIN: string = "https://www.linkedin.com/in/benedykt-kajzerek/";
 const CV: string =
-  "https://drive.google.com/file/d/1JPdU5V-AHFG6TF3arK_YLfuLIxt-W-B9/view?usp=sharing";
+  "https://drive.google.com/file/d/1D5HbgYaIF3sgBdSwiU-gfap2YPOSyfwu/view?usp=sharing";
 
 // ======
 // Navbar
